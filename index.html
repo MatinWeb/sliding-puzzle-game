@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Puzzle Game</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #board {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        border: 2px solid black;
+        max-width: 90vw;
+        max-height: 90vh;
+        overflow: hidden;
+      }
+      .tile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        font-size: 2rem;
+      }
+      .tile.empty {
+        background-color: #aaaaaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="board"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
